@@ -28,5 +28,13 @@ pipeline {
                 }
             }
         }
+
+        stage ('SonarQube Scanner') {
+            steps {
+                withSonarQubeEnv(sonarqube9.9) {
+                sh "mvn sonar:sonar"
+                }
+            }
+        }
     }
 }
