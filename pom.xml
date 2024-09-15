@@ -6,7 +6,7 @@
 
   <groupId>com.ridoapp</groupId>
   <artifactId>web-app-rido</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>war</packaging>
 
   <name>web-app-rido Maven Webapp</name>
@@ -27,7 +27,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>Artifactory-releases</name>
+        <url>http://52.52.198.181:8081/artifactory/maven</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>Artifactory-snapshots</name>
+        <url>http://52.52.198.181:8081/artifactory/maven</url>
+    </snapshotRepository>
+</distributionManagement>
   <build>
     <finalName>web-app-rido</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
