@@ -64,16 +64,4 @@
       </plugins>
     </pluginManagement>
   </build>
-  <distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>Artifactory-releases</name>
-        <url>http://52.52.198.181:8081/artifactory/maven</url>
-    </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>Artifactory-snapshots</name>
-        <url>http://52.52.198.181:8081/artifactory/maven</url>
-    </snapshotRepository>
-</distributionManagement>
 </project>
